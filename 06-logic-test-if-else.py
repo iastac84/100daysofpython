@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Day 6
 
 country = input("Enter the name of your home country:\n")
 

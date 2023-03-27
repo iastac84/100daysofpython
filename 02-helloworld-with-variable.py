@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Day 2
 
 # Hello world with simple variable
 message = "Hello Python world!" 
