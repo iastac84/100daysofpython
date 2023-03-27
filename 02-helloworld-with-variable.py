@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.6
+#!/usr/bin/env python3
 
 # Hello world with simple variable
 message = "Hello Python world!" 

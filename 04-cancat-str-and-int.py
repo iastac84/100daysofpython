@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.6
+#!/usr/bin/env python3
 
 # Add to integers, then concatenate strings and integers with +
 integer1 = 44

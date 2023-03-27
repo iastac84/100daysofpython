@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.6
+#!/usr/bin/env python3
 
 # Let's start a coffee shop!
 # Let's build a simple robot Barista!
