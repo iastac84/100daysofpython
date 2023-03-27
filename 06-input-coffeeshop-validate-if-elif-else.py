@@ -3,7 +3,7 @@
 
 # Let's start a coffee shop!
 # Let's build a simple robot Barista!
-# Building on 05-input-coffeeshop.py we verify the customer's choice and price the items differently
+# Building on 05-input-coffeeshop.py we verify the customer's choice and price the items differently and use different text case options 
 
 # Variables
 COFFEESHOPNAME= "iastac84"
