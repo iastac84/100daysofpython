@@ -4,6 +4,7 @@
 # Collections
 # Dictionaries vs Lists
 
+# Dictionaries and lists are both mutable, and hence, they can be altered even after their creation
 
 # Dictionary - key and value pairs
 alien_0 = { "color" : "green" , "points" : 5}
@@ -30,3 +31,4 @@ List = [["Luton", "Morris", "Adebayo"] , ["Watford", "Bachmann", "Cathcart"]]
 print("\nMulti-Dimensional List: ")
 print(List)
 print(List[0])                         # Print first list in the nest
+
