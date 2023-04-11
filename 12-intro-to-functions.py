@@ -10,5 +10,6 @@ def greeting(name):
     """
     print("Hello, " + name + ". How are you doing today?")
 
+# Information can be passed into functions as arguments as below.
 greeting("Donald")
 greeting("Stormy")
