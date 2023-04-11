@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 # Day 14
 
-# The key function for working with files in Python is the open() function.
-# The open() function takes two parameters; filename, and mode.
-# There are four different methods (modes) for opening a file:
-# r - read, a - append, w - write, x - create
+"""
+The key function for working with files in Python is the open() function.
+The open() function takes two parameters; filename, and mode.
+There are four different methods (modes) for opening a file:
+r - read, a - append, w - write, x - create
+"""
 
 print (":::::print whole text:::::")
 lyrics = open("files/rappers.txt", "r")
