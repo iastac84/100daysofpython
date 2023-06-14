@@ -1,6 +1,14 @@
 #!/usr/bin/env python3
 # Day 24
 
+'''
+Python script that fetches and displays the current weather information for a given location using the OpenWeatherMap API
+To run we need a free API key at OpenWeatherMap and set it as an environment variable
+export OPENWEATHERMAP_API_KEY=your_api_key_here
+Also need to install the requests library if not installed already: pip install requests
+'''
+
+
 import os
 import requests
 import json
