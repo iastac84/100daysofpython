@@ -5,8 +5,6 @@
 Python script that achieves the task of deleting log entries for the previous day
 '''
 
-#!/usr/bin/env python3
-
 import os
 import datetime
 
