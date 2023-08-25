@@ -52,4 +52,5 @@ if __name__ == "__main__":
 
 """
 By calling the strip() method on user_answer, any leading or trailing whitespace will be removed before comparing it with the correct answers. This way, the script will be more forgiving with regards to input containing trailing spaces.
+As well as the earlier change to accept a list of possible correct answers
 """
