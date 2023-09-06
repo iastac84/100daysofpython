@@ -44,6 +44,7 @@ if __name__ == '__main__':
     # Calculate the average price
     average_price = round(sum(pubPrices) / len(pubPrices), 2)
 
+    # Get most expensive
     max_price, most_expensive_pubs = findMostExpensivePub(pubs, pubPrices)
 
     if most_expensive_pubs:
@@ -55,6 +56,7 @@ if __name__ == '__main__':
 
     print("")
 
+    # Get least expensive
     min_price, least_expensive_pubs = findLeastExpensivePub(pubs, pubPrices)
 
     if least_expensive_pubs:
@@ -66,3 +68,8 @@ if __name__ == '__main__':
 
     print("")
     print("The average price of a pint of Guinness among the", num_pubs, "listed pubs is:", average_price, "euros.")
+    print("")
+
+    # Get the total price of a having a pint in each pub
+    total_price = (sum(pubPrices)) 
+    print("The cost of ordering a pint of Guinness in each of the", num_pubs, "pubs is", total_price, "euros.")
