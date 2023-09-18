@@ -32,7 +32,7 @@ def check_if_evil():
     else:
        print ("Hello " + NAME.title() + " thank you for coming in today!\n\n")
        evil_status="No"
-       print(evil_status)
+       # print(evil_status)
        exit(22)
 
 # Function to ask if Ben, Patricia or Loki admit to being evil, ask them how many good deeds they have performed today! 
