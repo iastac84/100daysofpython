@@ -286,7 +286,7 @@ def final_print():
             league_in += 1
             ct, h_team, h_score, a_team, a_score, time = 0, 1, 2, 3, 4, 5
             
-        refresh = input('Press "Enter" to refresh the page or any other key to quit: ')
+        refresh = input('Press "Enter" to refresh the page or enter any other key to quit: ')
         os.system("clear")
         
 
