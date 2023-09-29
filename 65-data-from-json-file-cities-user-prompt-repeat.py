@@ -39,7 +39,7 @@ def main():
         play_again = input("Do you want find another captial city? (yes/no): ")
         if play_again.lower() != "yes":
             print("Thank you for using the captial city query service! Have a great day!")
-            break
+        break
 
 
 if __name__ == "__main__":
