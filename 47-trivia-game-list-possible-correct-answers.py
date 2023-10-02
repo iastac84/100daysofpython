@@ -6,8 +6,8 @@ import random
 # List of trivia questions and their corresponding answers
 trivia_questions = [
     {
-        "question": "What is the capital of France?",
-        "answers": ["Paris"]
+        "question": "What is the capital of Spain?",
+        "answers": ["Madrid"]
     },
     {
         "question": "Which planet is known as the Red Planet?",
