@@ -9,6 +9,10 @@
 players = ['Horvath','Osho','Lockyer','Bell','Drameh','Mpanzu','Nakamba','Doughty','Campbell','Morris','Adebayo']
 eleven = len(players)
 
+print ("Here we use an object type of:")
+print (type(players))
+print ()
+
 print ()
 print ("Luton " + str(eleven) + " team to face Watford")
 index = 0
