@@ -26,17 +26,30 @@ thisdict = {
 }
 
 print(thisdict)
-print ()
 
+######### Function to get items #########
+def myiteratoritems(mydictkeysitems):
+    for x in (mydictkeysitems.items()): 
+      print(x)
+
+print ()
+print ("Get Items................................")
+myiteratoritems(statuses)
+print ()
+myiteratoritems(thisdict)
+
+######### Function to get keys #########
 def myiterator(mydictkeys):
     for x in (mydictkeys):    # Can also use:  for x in (mydictkeys.keys()):
       print(x)
 
+print ()
 print ("Get Keys.................................")
 myiterator(statuses)
 print ()
 myiterator(thisdict)
 
+######### Function to get values #########
 def myiteratorvalues(mydictvalues):
     for x in (mydictvalues.values()):
       print(x)
