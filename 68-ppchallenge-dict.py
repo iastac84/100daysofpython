@@ -27,8 +27,8 @@ thisdict = {
 print(thisdict)
 print ()
 
-def myiterator():
-    for x in ():
+def myiterator(mydict):
+    for x in (mydict):
       print(x)
 
 myiterator(statuses)
