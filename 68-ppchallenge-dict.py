@@ -10,6 +10,7 @@ statuses = {
     "Alice": "online",
     "Bob": "offline",
     "Eve": "online",
+    "Marvelous": "online",
 }
 
 print(statuses)
@@ -27,9 +28,21 @@ thisdict = {
 print(thisdict)
 print ()
 
-def myiterator(mydict):
-    for x in (mydict):
+def myiterator(mydictkeys):
+    for x in (mydictkeys):    # Can also use:  for x in (mydictkeys.keys()):
       print(x)
 
+print ("Get Keys.................................")
 myiterator(statuses)
+print ()
 myiterator(thisdict)
+
+def myiteratorvalues(mydictvalues):
+    for x in (mydictvalues.values()):
+      print(x)
+
+print ()
+print ("Get Values...............................")
+myiteratorvalues(statuses)
+print ()
+myiteratorvalues(thisdict)
