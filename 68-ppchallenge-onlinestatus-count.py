@@ -13,12 +13,11 @@ statuses = {
     "Eve": "online",
 }
 
-count = 0
+def online_count(peopledict):
+    count = 0 
+    for status in (peopledict.values()):    
+      if status == "online":
+         count += 1
+    return count
 
-def online_count(mydict):
-    for x in (mydict.values()):    
-      if x == "online":
-          sum = count + 1
-    print (sum)
-
-online_count(statuses)
+print("The number of people is online is",online_count(statuses))
