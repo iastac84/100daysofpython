@@ -13,6 +13,8 @@ statuses = {
     "Eve": "online",
 }
 
+# The plus-equals operator += provides a convenient way to add a value to an existing variable and assign the new value back to the same variable. 
+
 def online_count(peopledict):
     count = 0 
     for status in (peopledict.values()):    
