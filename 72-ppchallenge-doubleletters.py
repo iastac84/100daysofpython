@@ -10,11 +10,13 @@ The goal of this challenge is to analyze a string to check if it contains two of
 Define a function named double_letters that takes a single parameter. The parameter is a string. Your function must return True if there are two identical letters in a row in the string, and False otherwise.
 '''
 
-def only_ints(num_1, num_2):
-    if type(num_1) == int and type(num_2) == int:
-        return True
-    else: 
-        return False
+def double_letters(letters):
+    for letter in range(len(letters)-1):
+        if letters[letter] == letters[letter+1]:
+            return True
+    return False
 
-print(only_ints(1, 2)) 
-print(only_ints("a", 1)) 
+print(double_letters("letters"))
+print(double_letters("hello"))
+print(double_letters("heLlo"))
+print(double_letters("nononono"))
