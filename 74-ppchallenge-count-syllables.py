@@ -8,11 +8,14 @@ Define a function named count that takes a single parameter. The parameter is a 
 '''
 
 def countsylla(string):
-    new_string = ".".join(string)
-    return new_string
+    count = 1
+    for each in (string):
+      if each == "-":
+         count += 1
+    return count
+
 
 print(countsylla("ho-tel"))
 print(countsylla("cat"))
 print(countsylla("met-a-phor"))
 print(countsylla("ter-min-a-tor"))
-
