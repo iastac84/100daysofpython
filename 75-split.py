@@ -2,6 +2,8 @@
 # Day 75
 
 # Splits
+# Lots of different string methods:
+# https://www.w3schools.com/python/python_ref_string.asp
 # https://www.w3schools.com/python/ref_string_split.asp
 
 txt = "welcome to the jungle"
