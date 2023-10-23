@@ -17,9 +17,11 @@ Hint: You can compare how many times each letter appears in each string. Alterna
 def is_anagram(strg1, strg2):
    x = sorted(strg1)
    y = sorted(strg2)
-   print(x)
-   print(y)
+   if x == y:
+      return True
+   else:
+      return False
    
 
-is_anagram("typhoon", "opython")
-is_anagram("Alice", "Bob")
+print(is_anagram("typhoon", "opython"))
+print(is_anagram("Alice", "Bob"))
