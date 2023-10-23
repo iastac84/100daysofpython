@@ -26,3 +26,4 @@ def is_anagram(strg1, strg2):
 print(is_anagram("typhoon", "opython"))
 print(is_anagram("Alice", "Bob"))
 print(is_anagram("Beckham", "Peckham"))
+print(is_anagram("David Beckham", "Bavid Deckham"))
