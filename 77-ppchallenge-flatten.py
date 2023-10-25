@@ -14,8 +14,18 @@ flatten([[1, 2], [3, 4]])
 Should return the list:
 
 [1, 2, 3, 4]
+
+Hint
+Start by defining an empty list as the result:
+result = []
+Then use a nested for loop to fill up the result.
 '''
 
-def flattenfunction(strg1, strg2):
+def flattenfunction(lists):
+   result = []
+   for list in lists:
+      result.append(list)
+   return result 
+   
 
-flattenfunction([[1, 2], [3, 4]])
+print(flattenfunction([[1, 2], [3, 4], [5, 6]]))
