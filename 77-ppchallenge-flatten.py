@@ -30,3 +30,5 @@ def flatten(lists):
    
 
 print(flatten([[1, 2], [3, 4], [5, 6]]))
+print(flatten([["Thomas", "James"], ["Mads", "Tom"], ["Alfie", "Amarii"], ["Gabe", "Reece"]]))
+
