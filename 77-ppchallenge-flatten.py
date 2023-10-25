@@ -21,11 +21,12 @@ result = []
 Then use a nested for loop to fill up the result.
 '''
 
-def flattenfunction(lists):
+def flatten(lists):
    result = []
    for list in lists:
-      result.append(list)
+       for item in list:
+          result.append(item)
    return result 
    
 
-print(flattenfunction([[1, 2], [3, 4], [5, 6]]))
+print(flatten([[1, 2], [3, 4], [5, 6]]))
