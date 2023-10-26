@@ -19,10 +19,11 @@ To find the smallest number you can use the min() built-in. Alternatively you ca
 '''
 
 def largest_difference(numbers):
-   numbers.sort()
-   print(numbers[0])
-   return numbers[0] 
+   minnumber = min(numbers)
+   maxnumber = max(numbers)
+   largest_diff = maxnumber - minnumber 
+   return largest_diff
    
 
-print(largest_difference([[1, 2, 3, 4, 5, 6]]))
+print(largest_difference([1, 2, 3, 4, 5, 6]))
 
