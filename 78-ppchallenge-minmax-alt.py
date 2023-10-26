@@ -18,12 +18,20 @@ Then compute their difference and return it.
 To find the smallest number you can use the min() built-in. Alternatively you can set smallest = 100 and loop over each number in the input list. Whenever you see a smaller one, set smallest to it.
 '''
 
-def largest_difference(numbers):
-   minnumber = min(numbers)
-   maxnumber = max(numbers)
-   largest_diff = maxnumber - minnumber 
-   return largest_diff
-   
+# Another solution https://dev.to/mahmoudessam/python-challenge10-1amc 
 
-print(largest_difference([1, 2, 3, 4, 5, 6]))
+def largest_difference(numbers):
+ smallest = 100
+ for n in numbers:
+  if n < smallest:
+   smallest = n
+
+ largest = -100
+ for n in numbers:
+  if n > largest:
+    largest = n
+
+ difference = largest - smallest
+ return difference
+
 print(largest_difference([50, 84, 12, 45, 29, 16]))
