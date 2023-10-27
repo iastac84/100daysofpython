@@ -21,5 +21,5 @@ def div_3(x):
         return False
 
 
-print(div_3(88))
-print(div_3(666))
+print("and so is", div_3(17))
+print("and is therefore", div_3(666))
