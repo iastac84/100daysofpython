@@ -46,4 +46,12 @@ def get_row_col(tic_tac):
             column = board_keys[key]
             return (row, column)
 
+print(get_row_col("a1"))
+print(get_row_col("a2"))
+print(get_row_col("a3"))
+print(get_row_col("b1"))
+print(get_row_col("b2"))
+print(get_row_col("b3"))
 print(get_row_col("c1"))
+print(get_row_col("c2"))
+print(get_row_col("c3"))
