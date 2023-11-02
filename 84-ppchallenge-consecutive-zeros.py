@@ -17,10 +17,14 @@ Note : the int type in Python is not iterable, so we cannot use a for loop to it
 
 def consecutive_zeros(binary_string):
     countzeros = 0
+    result = 0
     for each in str(binary_string):
-      if each == "0":
+      if each !="0":
+         countzeros = 0
+      elif each == "0":
          countzeros += 1
-    return countzeros
+      result = max(result, countzeros)
+    return result
 
-print(consecutive_zeros(1001101000110))
+print("The maximum number of consecutive zeros in the string is:", consecutive_zeros(1001101000110))
 
