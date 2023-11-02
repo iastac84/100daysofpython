@@ -17,4 +17,5 @@ def up_down(num1):
    return mytuple
 
 print(up_down(7))
+print((type(up_down(7))))
 
