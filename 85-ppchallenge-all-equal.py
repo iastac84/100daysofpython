@@ -11,14 +11,16 @@ Define a function named all_equal that takes a list and checks whether all eleme
 For example, calling all_equal([1, 1, 1]) should return True.
 '''
 
-def palindrome(string):
-   reverseit = string[::-1] 
-   if string.casefold() == reverseit.casefold():
-     return True
-   else:
-     return False
+def all_equal(equal_list):
 
-print(palindrome("abcdef"))
-print(palindrome("abba"))
-print(palindrome("Level"))
+    result = all(element == equal_list[0] for element in equal_list)
 
+    if (result):
+        return True
+    else:
+        return False
+
+print(all_equal([1, 1, 1]))
+print(all_equal([7, 7, 7, 8]))
+print(all_equal(["a", "a", "a", "a"]))
+print(all_equal(["a", "b", "b", "a"]))
