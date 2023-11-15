@@ -26,8 +26,8 @@ def list_snapshots():
     volumes = ec2.describe_volumes()['Volumes']
     existing_volumes_info = {volume['VolumeId']: volume['AvailabilityZone'] for volume in volumes}
 
-    # Print details of each snapshot, including VolumeId (if available), region, and AWS account number
-    print("Account Number\tSnapshot ID\t\tCreation Date\t\tVolume ID\tRegion\tOrphaned\tSize (GiB)\tDescription")
+    # Print details of each snapshot, including VolumeId (if available), region, size, AWS account number, name tag, and orphaned status
+    print("Account Number\tSnapshot ID\tName\tCreation Date\tVolume ID\tRegion\tOrphaned\tSize (GiB)\tDescription")
     print("-------------------------------------------------------------------------------------------------")
     for snapshot in snapshots:
         snapshot_id = snapshot['SnapshotId']
@@ -41,10 +41,14 @@ def list_snapshots():
         # Get the snapshot size
         size = snapshot['VolumeSize']
 
+        # Get the name tag (if available)
+        tags = snapshot.get('Tags', [])
+        name_tag = next((tag['Value'] for tag in tags if tag['Key'] == 'Name'), 'N/A')
+
         # Check if the snapshot is orphaned by verifying if its volume ID exists
         orphaned = "Yes" if volume_id not in existing_volumes_info else "No"
 
-        print(f"{account_number}\t{snapshot_id}\t{creation_date}\t{volume_id}\t{region}\t{orphaned}\t{size}\t{description}")
+        print(f"{account_number}\t{snapshot_id}\t{name_tag}\t{creation_date}\t{volume_id}\t{region}\t{orphaned}\t{size}\t{description}")
 
 if __name__ == "__main__":
     list_snapshots()
