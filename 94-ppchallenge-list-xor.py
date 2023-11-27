@@ -20,12 +20,12 @@ list_xor(1, [0, 0, 0], [4, 5, 6]) == False
 def list_xor(n, list1, list2):
 
     list_one = n in list1
-    list_tow = n in list2
+    list_two = n in list2
 
-    if list_one != list_tow:
+    if list_one != list_two:
         return True
 
-    if list_one == list_tow:
+    if list_one == list_two:
         return False
 
 print(list_xor(1, [1, 2, 3], [4, 5, 6]))
