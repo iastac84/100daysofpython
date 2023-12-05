@@ -16,9 +16,9 @@ def scrape_current_table():
         for row in table.find_all('tr')[1:]:
             columns = row.find_all('td')
             if len(columns) >= 4:
-                position = columns[0].text.strip()
-                team_name = columns[1].text.strip()
-                games_played = columns[2].text.strip()
+                position = columns[1].text.strip()
+                team_name = columns[2].text.strip()
+                games_played = columns[3].text.strip()
                 points = columns[10].text.strip()  # Updated to index 8 for points
 
                 team_data = {
