@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Day 100
+# Day 100 - aws-get-reserved-instaces
 
 import boto3
 
