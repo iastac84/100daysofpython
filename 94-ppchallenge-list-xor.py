@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Day 94
 
-# challenge from https://pythonprinciples.com/challenges
+# challenge from https://pythonprinciples.com/challenges ...
 '''
 Challenge
 List xor
