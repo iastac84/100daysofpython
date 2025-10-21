@@ -2,7 +2,7 @@
 # Day 31
 
 '''
-simple function that calculates the square of a number
+Simple function that calculates the square of a number
 '''
 
 def square(num):
